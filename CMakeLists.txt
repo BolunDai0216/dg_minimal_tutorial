@@ -56,7 +56,7 @@ install(FILES ${PROJECT_SOURCE_DIR}/config/dg_minimal_tutorial.yaml DESTINATION 
 add_executable(dg_minimal_tutorial_main src/dg_minimal_tutorial_main.cpp)
 target_include_directories(dg_minimal_tutorial_main PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include> $<INSTALL_INTERFACE:include>)
 target_link_libraries(dg_minimal_tutorial_main ${PROJECT_NAME})
-target_compile_definitions(dg_minimal_tutorial_main PUBLIC CONFIG_PATH="${CMAKE_INSTALL_PREFIX}/${config_destination}/dg_minimal_tutorial.yaml")
+target_compile_definitions(dg_minimal_tutorial_main PUBLIC CONFIG_PATH="${PROJECT_SOURCE_DIR}/install/${CONFIG_DESTINATION}/dg_minimal_tutorial.yaml")
 
 # Install the include directory
 install(DIRECTORY include/ DESTINATION include)
