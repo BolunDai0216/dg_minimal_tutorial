@@ -1,0 +1,13 @@
+is_real_robot: false
+device:
+  name: "dg_minimal_tutorial"
+  sensors:
+    value:
+      size: 2
+  controls:
+    new_value:
+      size: 2
+hardware_communication:
+  maximum_time_for_user_cmd: 100000
+  max_missed_control: 10
+  control_period: 1000000
