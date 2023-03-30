@@ -17,7 +17,7 @@ def generate_launch_description():
                 package="dg_minimal_tutorial",
                 node_executable="dg_minimal_tutorial_main",
                 output="screen",
-                prefix=['xterm -hold -e'],
+                prefix=["xterm -hold -e"],
             ),
         ]
     )
