@@ -18,6 +18,7 @@ void DGMinimalTutorial::initialize_hardware_communication_process() {
 void DGMinimalTutorial::get_sensors_to_map(dynamic_graph_manager::VectorDGMap& map) {
     map["value"](0) = 1;
     map["value"](1) = 2;
+    std::cout << "running get_sensors_to_map()" << std::endl;
 }
 
 void DGMinimalTutorial::set_motor_controls_from_map(const dynamic_graph_manager::VectorDGMap& map) {

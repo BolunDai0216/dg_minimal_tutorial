@@ -11,5 +11,10 @@ int main(int /*argc*/, char* /*argv*/[]) {
   dg_minimal_tutorial::DGMinimalTutorial dgm;
 
   dgm.initialize(param);
-  dgm.run_single_process(); 
+  dgm.run();
+
+  // Wait until ROS is shutdown
+  std::cout << "Wait for shutdown, press CTRL+C to close." << std::endl;
+  dynamic_graph_manager::ros_spin();
+  dynamic_graph_manager::ros_shutdown();
 }

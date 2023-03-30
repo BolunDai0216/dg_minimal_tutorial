@@ -1,4 +1,4 @@
-is_real_robot: false
+is_real_robot: true
 device:
   name: "dg_minimal_tutorial"
   sensors:
@@ -11,3 +11,5 @@ hardware_communication:
   maximum_time_for_user_cmd: 100000
   max_missed_control: 10
   control_period: 1000000
+  shared_memory_name: "DGM_ShM"
+  timer_triggered: true
